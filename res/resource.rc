@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: GPL-3.0
+// Copyright (c) 2026 p2b
+// 应用图标资源
+// ------------------------------------------------------------
+// 编译进 mouse2controller.exe:资源管理器 / 任务栏 / Alt-Tab 显示此图标;
+// 运行时 main.cpp 的 ui::create 用 LoadImageW(hInst, MAKEINTRESOURCEW(IDI_APPICON), ...)
+// 从 exe 自身资源加载为窗口标题栏图标。
+//   源图:res/logo.png(1024x1024) -> 多尺寸 icon.ico(16/24/32/48/64/128/256)
+#define IDI_APPICON 101
+
+IDI_APPICON ICON "icon.ico"

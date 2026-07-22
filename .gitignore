@@ -1,0 +1,25 @@
+# 构建产物
+build/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.log
+*.tlog
+
+# ViGEm 运行时依赖(自行下载放 build 目录,不纳入版本库)
+ViGEmClient.dll
+
+# IDE
+.vs/
+.vscode/
+*.user
+
+# 第三方依赖(自行获取,不纳入版本库)
+#   third_party/imgui/  -> git clone --depth 1 --branch v1.91.9 https://github.com/ocornut/imgui.git
+#   ViGEmClient-master/ -> ViGEmClient SDK 源码,用于 build_vigem.bat 产出 ViGEmClient.dll
+third_party/
+ViGEmClient-master/
+ViGEmClient/
